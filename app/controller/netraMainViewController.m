@@ -20,7 +20,7 @@
     if (self) {
         // Custom initialization
         
-        table = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+        table = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height-64)];
         table.backgroundColor = [UIColor clearColor];
         table.separatorColor =[UIColor clearColor];
         

@@ -647,6 +647,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/app/GoogleMobileAdsSdkiOS-6.9.3",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -664,6 +665,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/app/GoogleMobileAdsSdkiOS-6.9.3",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
