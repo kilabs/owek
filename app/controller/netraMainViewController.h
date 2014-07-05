@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface netraMainViewController : UIViewController
-
+@interface netraMainViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+{
+    UITableView *table;
+    NSArray *nama;
+}
 @end

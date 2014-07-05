@@ -22,6 +22,16 @@
 		4302197E1967E450001195A6 /* i4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4302197A1967E450001195A6 /* i4@2x.png */; };
 		4302197F1967E450001195A6 /* i5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4302197B1967E450001195A6 /* i5@2x.png */; };
 		430219821967E49E001195A6 /* netraMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 430219811967E49E001195A6 /* netraMainViewController.m */; };
+		430219851967F8A5001195A6 /* cat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 430219841967F8A5001195A6 /* cat@2x.png */; };
+		430219891967F8DC001195A6 /* netraTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 430219881967F8DC001195A6 /* netraTableViewCell.m */; };
+		4302198C1967FCFC001195A6 /* source.json in Resources */ = {isa = PBXBuildFile; fileRef = 4302198B1967FCFC001195A6 /* source.json */; };
+		4302198E19680039001195A6 /* cow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4302198D19680039001195A6 /* cow@2x.png */; };
+		43021990196800C7001195A6 /* goat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4302198F196800C7001195A6 /* goat@2x.png */; };
+		4302199219680463001195A6 /* dog@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4302199119680463001195A6 /* dog@2x.png */; };
+		4302199419680471001195A6 /* duck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4302199319680471001195A6 /* duck@2x.png */; };
+		43021996196804FC001195A6 /* dolphin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43021995196804FC001195A6 /* dolphin@2x.png */; };
+		430219981968056C001195A6 /* owl@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 430219971968056C001195A6 /* owl@2x.png */; };
+		4302199A196805FB001195A6 /* lion@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43021999196805FB001195A6 /* lion@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +65,17 @@
 		4302197B1967E450001195A6 /* i5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i5@2x.png"; sourceTree = "<group>"; };
 		430219801967E49E001195A6 /* netraMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netraMainViewController.h; sourceTree = "<group>"; };
 		430219811967E49E001195A6 /* netraMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = netraMainViewController.m; sourceTree = "<group>"; };
+		430219841967F8A5001195A6 /* cat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cat@2x.png"; sourceTree = "<group>"; };
+		430219871967F8DC001195A6 /* netraTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netraTableViewCell.h; sourceTree = "<group>"; };
+		430219881967F8DC001195A6 /* netraTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = netraTableViewCell.m; sourceTree = "<group>"; };
+		4302198B1967FCFC001195A6 /* source.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = source.json; sourceTree = "<group>"; };
+		4302198D19680039001195A6 /* cow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cow@2x.png"; sourceTree = "<group>"; };
+		4302198F196800C7001195A6 /* goat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "goat@2x.png"; sourceTree = "<group>"; };
+		4302199119680463001195A6 /* dog@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dog@2x.png"; sourceTree = "<group>"; };
+		4302199319680471001195A6 /* duck@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "duck@2x.png"; sourceTree = "<group>"; };
+		43021995196804FC001195A6 /* dolphin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dolphin@2x.png"; sourceTree = "<group>"; };
+		430219971968056C001195A6 /* owl@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "owl@2x.png"; sourceTree = "<group>"; };
+		43021999196805FB001195A6 /* lion@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lion@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +176,8 @@
 		430219781967E450001195A6 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				4302198A1967FCEC001195A6 /* datasource */,
+				430219861967F8B6001195A6 /* tableviewcell */,
 				430219791967E450001195A6 /* assets */,
 				4302197C1967E450001195A6 /* controller */,
 				4302197D1967E450001195A6 /* view */,
@@ -165,6 +188,7 @@
 		430219791967E450001195A6 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				430219831967F8A5001195A6 /* icon */,
 				4302197A1967E450001195A6 /* i4@2x.png */,
 				4302197B1967E450001195A6 /* i5@2x.png */,
 			);
@@ -185,6 +209,38 @@
 			children = (
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		430219831967F8A5001195A6 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				43021999196805FB001195A6 /* lion@2x.png */,
+				43021995196804FC001195A6 /* dolphin@2x.png */,
+				4302199319680471001195A6 /* duck@2x.png */,
+				430219971968056C001195A6 /* owl@2x.png */,
+				4302199119680463001195A6 /* dog@2x.png */,
+				4302198F196800C7001195A6 /* goat@2x.png */,
+				4302198D19680039001195A6 /* cow@2x.png */,
+				430219841967F8A5001195A6 /* cat@2x.png */,
+			);
+			path = icon;
+			sourceTree = "<group>";
+		};
+		430219861967F8B6001195A6 /* tableviewcell */ = {
+			isa = PBXGroup;
+			children = (
+				430219871967F8DC001195A6 /* netraTableViewCell.h */,
+				430219881967F8DC001195A6 /* netraTableViewCell.m */,
+			);
+			path = tableviewcell;
+			sourceTree = "<group>";
+		};
+		4302198A1967FCEC001195A6 /* datasource */ = {
+			isa = PBXGroup;
+			children = (
+				4302198B1967FCFC001195A6 /* source.json */,
+			);
+			path = datasource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +321,16 @@
 			files = (
 				4302197F1967E450001195A6 /* i5@2x.png in Resources */,
 				430219501967E321001195A6 /* InfoPlist.strings in Resources */,
+				4302198E19680039001195A6 /* cow@2x.png in Resources */,
+				4302199419680471001195A6 /* duck@2x.png in Resources */,
+				43021990196800C7001195A6 /* goat@2x.png in Resources */,
 				4302197E1967E450001195A6 /* i4@2x.png in Resources */,
+				430219851967F8A5001195A6 /* cat@2x.png in Resources */,
+				43021996196804FC001195A6 /* dolphin@2x.png in Resources */,
+				4302198C1967FCFC001195A6 /* source.json in Resources */,
+				4302199A196805FB001195A6 /* lion@2x.png in Resources */,
+				430219981968056C001195A6 /* owl@2x.png in Resources */,
+				4302199219680463001195A6 /* dog@2x.png in Resources */,
 				430219581967E321001195A6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				430219891967F8DC001195A6 /* netraTableViewCell.m in Sources */,
 				430219821967E49E001195A6 /* netraMainViewController.m in Sources */,
 				430219521967E321001195A6 /* main.m in Sources */,
 				430219561967E321001195A6 /* netraAppDelegate.m in Sources */,
