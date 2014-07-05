@@ -64,6 +64,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [super viewDidLoad];
     
+    self.navigationController.navigationBar.hidden  =YES;
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"source" ofType:@"json"];
     NSString *myJSON = [[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:NULL];
     if (!myJSON) {
