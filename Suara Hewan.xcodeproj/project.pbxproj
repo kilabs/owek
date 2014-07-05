@@ -19,6 +19,9 @@
 		430219611967E322001195A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430219491967E321001195A6 /* UIKit.framework */; };
 		430219691967E322001195A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 430219671967E322001195A6 /* InfoPlist.strings */; };
 		4302196B1967E322001195A6 /* Suara_HewanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4302196A1967E322001195A6 /* Suara_HewanTests.m */; };
+		4302197E1967E450001195A6 /* i4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4302197A1967E450001195A6 /* i4@2x.png */; };
+		4302197F1967E450001195A6 /* i5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4302197B1967E450001195A6 /* i5@2x.png */; };
+		430219821967E49E001195A6 /* netraMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 430219811967E49E001195A6 /* netraMainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,10 @@
 		430219661967E322001195A6 /* Suara HewanTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Suara HewanTests-Info.plist"; sourceTree = "<group>"; };
 		430219681967E322001195A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4302196A1967E322001195A6 /* Suara_HewanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Suara_HewanTests.m; sourceTree = "<group>"; };
+		4302197A1967E450001195A6 /* i4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i4@2x.png"; sourceTree = "<group>"; };
+		4302197B1967E450001195A6 /* i5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i5@2x.png"; sourceTree = "<group>"; };
+		430219801967E49E001195A6 /* netraMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netraMainViewController.h; sourceTree = "<group>"; };
+		430219811967E49E001195A6 /* netraMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = netraMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +84,7 @@
 		430219391967E321001195A6 = {
 			isa = PBXGroup;
 			children = (
+				430219781967E450001195A6 /* app */,
 				4302194B1967E321001195A6 /* Suara Hewan */,
 				430219641967E322001195A6 /* Suara HewanTests */,
 				430219441967E321001195A6 /* Frameworks */,
@@ -142,6 +150,41 @@
 				430219671967E322001195A6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		430219781967E450001195A6 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				430219791967E450001195A6 /* assets */,
+				4302197C1967E450001195A6 /* controller */,
+				4302197D1967E450001195A6 /* view */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		430219791967E450001195A6 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				4302197A1967E450001195A6 /* i4@2x.png */,
+				4302197B1967E450001195A6 /* i5@2x.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		4302197C1967E450001195A6 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				430219801967E49E001195A6 /* netraMainViewController.h */,
+				430219811967E49E001195A6 /* netraMainViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		4302197D1967E450001195A6 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +263,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4302197F1967E450001195A6 /* i5@2x.png in Resources */,
 				430219501967E321001195A6 /* InfoPlist.strings in Resources */,
+				4302197E1967E450001195A6 /* i4@2x.png in Resources */,
 				430219581967E321001195A6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				430219821967E49E001195A6 /* netraMainViewController.m in Sources */,
 				430219521967E321001195A6 /* main.m in Sources */,
 				430219561967E321001195A6 /* netraAppDelegate.m in Sources */,
 			);

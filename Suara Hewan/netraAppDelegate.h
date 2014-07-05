@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "netraMainViewController.h"
 @interface netraAppDelegate : UIResponder <UIApplicationDelegate>
-
+{
+    netraMainViewController *netraMain;
+}
 @property (strong, nonatomic) UIWindow *window;
 
 @end
