@@ -22,7 +22,17 @@
     [self.window makeKeyAndVisible];
     return YES;
 }
-
+-(void)play:(NSString *)file{
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+    [[AVAudioSession sharedInstance] setActive: YES error: nil];
+    NSLog(@"file->%@",file);
+    //start a background sound
+    NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:file ofType: @"mp3"];
+    NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:soundFilePath ];
+    myAudioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+    myAudioPlayer.numberOfLoops = -1; //infinite loop
+    [myAudioPlayer play];
+}
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -64,7 +64,26 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [super viewDidLoad];
     
-    self.navigationController.navigationBar.hidden  =YES;
+    // Create a view of the standard size at the top of the screen.
+    // Available AdSize constants are explained in GADAdSize.h.
+    bannerView_ = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
+    
+    // Specify the ad unit ID.
+    bannerView_.adUnitID = @"ca-app-pub-2328850088103608/4334216177";
+    
+    // Let the runtime know which UIViewController to restore after taking
+    // the user wherever the ad goes and add it to the view hierarchy.
+    bannerView_.rootViewController = self;
+    [self.view addSubview:bannerView_];
+    
+    // Initiate a generic request to load it with an ad.
+    [bannerView_ loadRequest:[GADRequest request]];
+    bannerView_.rootViewController = self;
+    [self.view addSubview:bannerView_];
+    
+    // Initiate a generic request to load it with an ad.
+    [bannerView_ loadRequest:[GADRequest request]];
+
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"source" ofType:@"json"];
     NSString *myJSON = [[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:NULL];
     if (!myJSON) {
@@ -76,9 +95,15 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
         nama= [json valueForKey:@"nama"];
         NSLog(@"items->%@",nama);
     }
+    
     // Do any additional setup after loading the view.
 
     // Do any additional setup after loading the view.
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [hewan play:[nama objectAtIndex:indexPath.row]];
+    self.title = [nama objectAtIndex:indexPath.row];
 }
 
 - (void)didReceiveMemoryWarning
